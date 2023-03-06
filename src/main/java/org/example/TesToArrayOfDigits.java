@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.*;
 
-public class TestArrayOfDigits {
+public class TesToArrayOfDigits {
     private static final ToArrayOfDigits[] variants = {
             new Variant_1_CharAt(),
             new Variant_2_CharArray(),
@@ -35,7 +35,7 @@ public class TestArrayOfDigits {
             }
             launchResults.put(time, variant);
         }
-        System.out.printf("\nResult launch (n = %,d):\n", n);
+        System.out.printf("\nSorted result launch (n = %,d):\n", n);
         System.out.println("-".repeat(150));
         System.out.printf("%10s", "Time");
         System.out.print(" | ");
