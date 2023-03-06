@@ -1,6 +1,6 @@
 package org.example;
 
-public class Variant_4_Divide10 extends AbstractArrayOfDigits {
+public class Variant_4_Divide10 implements ToArrayOfDigits {
     @Override
     public int[] toArrayOfDigits(int n) {
         n = Math.abs(n);

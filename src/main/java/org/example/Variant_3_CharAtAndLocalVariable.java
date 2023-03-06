@@ -1,6 +1,6 @@
 package org.example;
 
-public class Variant_3_CharAtAndLocalVariable extends AbstractArrayOfDigits {
+public class Variant_3_CharAtAndLocalVariable implements ToArrayOfDigits {
     @Override
     public int[] toArrayOfDigits(int n) {
         String digitsStr = String.valueOf(Math.abs(n));

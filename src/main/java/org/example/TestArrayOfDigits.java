@@ -3,7 +3,7 @@ package org.example;
 import java.util.*;
 
 public class TestArrayOfDigits {
-    private static final AbstractArrayOfDigits [] variants = {
+    private static final ToArrayOfDigits[] variants = {
             new Variant_1_CharAt(),
             new Variant_2_CharArray(),
             new Variant_3_CharAtAndLocalVariable(),
@@ -25,8 +25,8 @@ public class TestArrayOfDigits {
     public static void main(String[] args) {
         int n = inputIntegerNumber();
         long min = Long.MAX_VALUE;
-        Map<Long, AbstractArrayOfDigits> launchResults = new TreeMap<>();
-        for (AbstractArrayOfDigits variant : variants) {
+        Map<Long, ToArrayOfDigits> launchResults = new TreeMap<>();
+        for (ToArrayOfDigits variant : variants) {
             long time = System.nanoTime();
             variant.toArrayOfDigits(n);
             time = System.nanoTime() - time;
