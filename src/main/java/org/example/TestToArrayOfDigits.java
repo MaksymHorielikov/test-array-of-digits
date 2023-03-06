@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.*;
 
-public class TesToArrayOfDigits {
+public class TestToArrayOfDigits {
     private static final ToArrayOfDigits[] variants = {
             new Variant_1_CharAt(),
             new Variant_2_CharArray(),
